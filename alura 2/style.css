@@ -1,0 +1,74 @@
+body {
+    background-color: #0B0C10; /* Um fundo escuro, quase preto, para um estilo mais espacial */
+    color: #C5C6C7; /* Um tom cinza claro para contraste com o fundo */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste para preencher toda a altura da viewport */
+    margin: 0;
+    padding: 0; /* Removido padding para evitar rolagem */
+    box-sizing: border-box;
+    background-image: url('th.png'); /* Adiciona uma imagem de fundo de espaço */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Remove rolagem do body */
+}
+
+main {
+    text-align: center;
+    width: 90vw; /* Ajusta a largura do main */
+    height: 90vh; /* Ajusta a altura do main */
+    background-color: rgba(0, 0, 0, 0.7); /* Adiciona um fundo semitransparente para o conteúdo principal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra para dar destaque ao conteúdo */
+    position: relative; /* Permite o posicionamento dos elementos internos */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Remove rolagem do main */
+}
+
+.passo {
+    display: none;
+    position: absolute; /* Permite que o conteúdo se ajuste dentro do main */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o conteúdo */
+    width: 100%; /* Ajusta a largura para preencher o contêiner */
+    height: 100%; /* Ajusta a altura para preencher o contêiner */
+    overflow: auto; /* Permite rolagem interna se necessário */
+    text-align: center;
+    padding: 20px; /* Espaço interno para o conteúdo */
+    box-sizing: border-box; /* Inclui padding e bordas na largura/altura total */
+}
+
+.passo.ativo {
+    display: block;
+}
+
+img {
+    max-width: 100%; /* Garante que a imagem se ajuste ao tamanho do contêiner */
+    max-height: 80vh; /* Limita a altura da imagem para não exceder a altura da viewport */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma sombra às imagens para um efeito mais imersivo */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorção */
+}
+
+button {
+    background-color: #45A29E; /* Um tom de azul esverdeado para uma aparência futurista */
+    color: #1F2833; /* Um contraste escuro para os botões */
+    font-family: "Bai Jamjuree", sans-serif;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na cor de fundo */
+    z-index: 2; /* Garante que os botões estejam acima das imagens */
+}
+
+button:hover {
+    background-color: #66FCF1; /* Muda para um tom mais claro quando o botão é hoverado */
+}

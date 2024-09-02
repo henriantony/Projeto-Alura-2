@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>Em busca do planeta perdido</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/th4.png" alt="Cenário espacial inicial">
+            <p>Certo dia, enquanto explorava um arquivo antigo na base espacial, encontrei um mapa estelar que sugeria a existência de um planeta desconhecido. Decidi seguir as coordenadas e embarcar nessa aventura cósmica!</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="1">Explorar a Nebulosa de Órion</button>
+                <button class="btn-proximo" data-proximo="2">Ir para a Galáxia de Andrômeda</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você chega à Nebulosa de Órion e começa a explorar uma região cheia de estrelas jovens, buscando pistas sobre o planeta perdido.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="3">Buscar pistas na estrela mais brilhante</button>
+                <button class="btn-proximo" data-proximo="4">Voltar à Terra</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>Na Galáxia de Andrômeda, você encontra uma antiga estação espacial abandonada. As lendas dizem que ela guarda informações sobre o planeta perdido. Por onde começar a busca?</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="5">Investigar o centro de controle</button>
+                <button class="btn-proximo" data-proximo="6">Explorar os laboratórios</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>Na estrela mais brilhante de Órion, você descobre um sinal antigo indicando que o planeta perdido está na Galáxia de Andrômeda.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="7">Seguir para Andrômeda</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-terra.png" alt="Imagem voltando para Terra e desistindo da aventura">
+            <p>Você decide que a aventura é perigosa demais e volta para a Terra, mas sempre se pergunta o que teria encontrado.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>No centro de controle da estação abandonada, você encontra um mapa estelar antigo, apontando que o planeta perdido está próximo a um buraco negro em Andrômeda.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="7">Viajar para o buraco negro</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Nos laboratórios, você encontra registros de experimentos, mas eles não levam a lugar algum.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="8">Voltar ao centro de controle</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Próximo ao buraco negro, a busca pelo planeta perdido se intensifica. Você se depara com dois caminhos: um túnel de tempo e um caminho estelar.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="9">Seguir pelo túnel de tempo</button>
+                <button class="btn-proximo" data-proximo="10">Seguir pelo caminho estelar</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta ao centro de controle, você finalmente encontra o mapa estelar. Agora, para o buraco negro!</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="7">Seguir para o buraco negro</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <img src="img/th.png" alt="Explorando o túnel de tempo">
+            <p>O túnel de tempo leva você a uma dimensão paralela onde o planeta perdido existe em uma realidade alternativa.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="11">Explorar o planeta perdido</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <img src="img/th5.png" alt="Caminho estelar sem saída">
+            <p>O caminho estelar leva você a uma região inexplorada da galáxia, mas não há sinais do planeta perdido aqui.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="12">Retornar e tentar o túnel de tempo</button>
+            </div>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/th3.png" alt="Encontrando o planeta perdido">
+            <p>Dentro do planeta perdido, você descobre formas de vida alienígena e decide se dedicar a estudar e preservar este lugar.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo o túnel de tempo, você finalmente encontra a dimensão onde o planeta perdido existe.</p>
+            <div class="opcoes">
+                <button class="btn-proximo" data-proximo="11">Explorar o planeta perdido</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
